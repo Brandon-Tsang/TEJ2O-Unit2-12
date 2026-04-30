@@ -2,7 +2,7 @@
  *
  * Created by: Brandon
  * Created on: Mar 2026
- * This program ...
+ * This program tells distance into centimetres.
 */
 
 // variables
@@ -22,7 +22,6 @@ input.onButtonPressed(Button.A, function () {
         DigitalPin.P2,
         PingUnit.Centimeters
     )
-    basic.showString(distanceNumber.toString())
     if (distanceNumber < 10) {
         neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
         neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
